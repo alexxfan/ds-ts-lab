@@ -13,6 +13,11 @@ interface Colleague {
     };
 }
 
+interface ColleagueHistory {
+    current: Colleague[],
+    former: Colleague[]
+}
+
 const friend1 = {
     name: "Jay Langford",
     phone: "0863758394",
@@ -46,7 +51,7 @@ const colleague2 = {
       email: "ggjorgiev@company.com",
       extension: 132,
     },
-  };
+};
   
 const colleague3 = {
     name: "Dean Doyle",
@@ -55,11 +60,11 @@ const colleague3 = {
       email: "ddo@company.com",
       extension: 125,
     },
-  };
+};
 
-const colleagues = {
+  export const colleagues : ColleagueHistory = {
     current: [colleague1, colleague2, colleague3],
     former: [],
-  };
+};
 
 console.log(colleagues.current[0]);
