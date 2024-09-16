@@ -18,7 +18,7 @@ export const friends = [friend1, friend2];
 //   -------------------
 
 const colleague1 = {
-    name: "Jay Fly",
+    name: "Jardan Flynn",
     department: "Engineering",
     contact: {
         email: "jayfly@setu.ie",
