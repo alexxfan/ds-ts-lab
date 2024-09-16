@@ -4,16 +4,25 @@ interface Friend {
     age: number
 }
 
+interface Colleague {
+    name: string;
+    department: string;
+    contact: {
+        email: string;
+        extension: number;
+    };
+}
+
 const friend1 = {
     name: "Jay Langford",
     phone: "0863758394",
-    age: "21",
+    age: 21,
 };
 
 const friend2 = {
     name: "Dylan Chai",
     phone: "0834723648",
-    age: "21",
+    age: 21,
 };
 
 const friends = [friend1, friend2];
